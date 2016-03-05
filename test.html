@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple html template</title>
+</head>
+<body>
+    <div id="tpl"></div>
+    <script src="./tpl.js"></script>
+    <script>
+        var tplDom = document.getElementById('tpl');
+        tplDom.innerHTML = render("simple html {json.template}",{json:{template:"template"}})
+    </script>
+</body>
+</html>
