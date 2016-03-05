@@ -8,7 +8,8 @@
             var variables = token.replace(/\s/g, '').split('.');
             var currentObject = context;
             var i, length, variable;
-            for (i = 0, length = variables.length, variable = variables[i]; i < length; ++i) {
+            for (i = 0, length = variables.length; i < length; ++i) {
+                variable = variables[i];
                 currentObject = currentObject[variable];
                 if (currentObject === undefined || currentObject === null) return '';
             }

@@ -1,9 +1,13 @@
 # simple html template
 
+## usage 1
 ```
 'hello {world}'.render({world:'world'})
 ```
-
+## usage 2
+```
+render("simple html {json.template}",{json:{template:"template"}})
+```
 ## 模板要求
 
 - 不需要有控制流成分（如 循环、条件 等等），只要有变量替换功能即可
